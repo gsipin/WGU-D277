@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Navbar-->
+<Nav>
+    <div class="navbar">
+        <a href="index.html">
+            <img src="images/Logo.png" class="logo" alt="Wasington Logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>  
+</Nav> 
+
+<!--Header-->
+
+<header>
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+    </div>
+</header>
+
+<!--Main Content-->
+<main>
+    <section id="contact-content">
+    <div class="form-container">
+        <h2>Please complete the information below</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm email address" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="4" placeholder="Add your message..." required></textarea>
+            </div>
+            <button type="submit" onclick="compareEmail()">Submit</button>
+        </form>
+        <script>
+            function compareEmail() {
+                var email = document.getElementById("email").value;
+                var confirmEmail = document.getElementById("confirm-email").value;
+
+                if(email !==confirmEmail) {
+                    alert("email addresses do not match")
+                } else {
+                    alert("emails match")
+                }
+            }
+        </script>
+        </div>
+
+</section>
+</main>
+
+<!--Aside Content-->
+<aside>
+    <section id="newsletter">
+        <div class="news-text">
+            <h2> New to Washington?</h2>
+            <p>Sign up for our newsletter to receive updates, news, and special offers directly to your inbox.</p>
+            <button>Join Today</button>
+        </div>
+        <div class="news-photo">
+            <img src="images/caleb-riston-TXiBwX0kg-Q-unsplash.jpg" alt="Mount Rainier">
+        </div>
+    </section>
+    </aside>
+    
+
+
+</body>
+</html>

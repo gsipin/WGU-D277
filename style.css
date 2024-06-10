@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+/* Navigation */ 
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    Cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #305B25;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: #305B25;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+/* Main Header */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-banner{
+    width: 100%;
+    height: 960px;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #000;
+}
+
+
+.content h1{
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px; 
+    letter-spacing: -0.84px;
+    margin: 1em 0em;
+}
+
+
+.banner-button {
+    display: inline-block;
+    padding: .75em 3em;
+    background-color: #305B25;
+    color: white;
+    border: 1px solid #305B25;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.banner-button:hover {
+    background-color: #fff;
+    color: #305B25;
+}
+
+/* City Header */
+
+city-header{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: block-inline;
+}
+
+
+.olympia-banner img{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.city-banner img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.city-introduction{
+    width: 90%;
+    margin: auto;
+    padding: 100px 0px 100px 0px;
+    text-align: left;
+}
+
+.city-introduction h1{
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; 
+    letter-spacing: -0.72px;
+}
+
+/* Contact Page Header */
+
+.contact-header {
+    width:100%;
+    text-align: center;
+    margin: 3em 0em;
+}
+
+.contact-header h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; 
+    letter-spacing: -0.72px;
+}
+
+/* Main Content */
+
+/* Main Page Intro */
+main {
+    width: auto;
+    height: auto;
+}
+
+.introduction {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0px 100px 0px;
+    text-align: left;
+}
+
+.introduction h2{
+    color: #305B25;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 60px; 
+    letter-spacing: -0.72px;
+    padding-bottom: 50px;
+}
+
+.introduction p{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: -0.48px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+/* Main Page About & Flag section */
+
+#about {
+    display: inline-block;
+    width: 90%;
+    padding: 0px 100px 100px 100px;
+    margin: auto;
+}
+
+.flag img{
+    width: 750px;
+    height: auto;
+}
+
+.flag {
+    float:left;
+    width: 45%
+}
+
+.about-text {
+    float: right;
+    width: 45%;
+    padding-top: 3em;
+}
+.about-text ul {
+    padding-left: 30px;
+}
+
+.about-text ol {
+    padding-left: 30px;
+}
+
+.about-text ul li {
+    margin-bottom: 0.5em;
+}
+
+.about-text ol li {
+    margin-bottom: 0.5em;
+}
+
+/* City Page Main Content */
+
+#city-info {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.city-about {
+    width: 43%;
+}
+
+.city-facts {
+    width: 47%;
+}
+
+.city-facts p{
+    font-size: 12px;
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    margin: 2em auto -.5em auto;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #305B25;
+    color: white;
+}
+
+tbody th {
+    background-color: #e7e7e7;
+    font-weight: normal;
+}
+
+/* City Cards */
+
+#our-cities {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+#our-cities h2{
+        color: #305B25;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 60px; 
+        letter-spacing: -0.72px;
+        padding-bottom: 50px;
+    }
+
+.city-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.city-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 448px;
+    height: 572;
+    text-align: center;
+}
+
+.city-card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    width: auto;
+    height: auto;
+}
+
+.card-text h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.card-text-button {
+    display: inline-block;
+    width: 135px;
+    height: 40px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    color: #305B25;
+    border: 1px solid #305B25;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -0.225px;
+    line-height: 40px;
+}
+
+.card-text-button:hover {
+    background-color: #305B25;
+    color: #fff;
+}
+
+/* Contact Form */
+
+#contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container{
+    background-color: #305B252B;
+    padding: 2em;
+    max-width: 500px;
+    width:100%;
+    border-radius: 6px;
+    margin-bottom: 5em;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.36px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"] {
+    flex: 1;
+}
+
+.form-group input + input {
+    margin-left: 1em;
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+button {
+    background-color: #305B25;
+    color: white;
+    border: none;
+    padding: 0.75em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #27401d;
+}
+
+@media (min-width: 600px) {
+    .form-group {
+        flex-direction: row;
+    }
+
+    .form-group input[type="text"] {
+        flex: 1;
+    }
+}
+
+
+
+/* Aside */
+#newsletter{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-text {
+    width: 50%;
+    padding: 80px;
+}
+
+.news-photo {
+    width: 50%;
+    padding: 75px;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-photo img {
+    width: 750px;
+    height: 440px;
+}
+
+.news-text h2 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.72px;
+}
+
+.news-text p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: -0.27px;
+    padding: 0em 0em 1em 0em;
+}
+
+.news-text button {
+    display: inline-block;
+    width: 192px;
+    height: 52px;
+    background-color: #305B25;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #305B25;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.news-text button:hover {
+    background-color: #fff;
+    color: #305B25;
+}
+
+/* Footer Content */
+
+footer {
+    background-color: #696868;
+}
+
+.citation {
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+}
+
+.citation h2 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 24px;
+}
+
+.citation ol{
+    color:#fff;
+    font-size: 16px;
+}
+
+.citation ol li{
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: .5em;
+}
+
+.main-button {
+    background-color: #305B25;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main-button a{
+    display: inline-block;
+    text-decoration: none;
+    color: #305B25;
+}
+
+
+
+
